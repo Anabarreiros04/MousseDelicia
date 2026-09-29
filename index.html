@@ -1,0 +1,675 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Mousse Delícia | Doces que abraçam</title>
+
+    <!-- LOGO NA ABA DO NAVEGADOR -->
+    <link rel="icon" type="image/png" href="assets/logo.jpeg">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- BARRA SUPERIOR -->
+    <div class="topbar">
+        💜 Feito com carinho • Encomendas para eventos e para aquele momento doce
+    </div>
+
+
+    <!-- MENU -->
+    <header class="nav">
+
+        <div class="container nav-inner">
+
+            <!-- LOGO -->
+            <a class="logo" href="index.html">
+
+                <span class="logo-mark">
+                    <img src="assets/logo.jpeg" alt="Logo Mousse Delícia">
+                </span>
+
+                Mousse Delícia
+
+            </a>
+
+
+            <!-- MENU -->
+            <nav class="nav-links">
+
+                <a href="#cardapio">
+                    Cardápio
+                </a>
+
+                <a href="#promocoes">
+                    Promoções
+                </a>
+
+                <a href="#avaliacoes">
+                    Avaliações
+                </a>
+
+                <a href="#pedido">
+                    Encomenda
+                </a>
+
+                <a class="btn btn-primary" href="#pedido">
+                    Meu pedido
+                    (<span data-cart-count>0</span>)
+                </a>
+
+            </nav>
+
+
+            <!-- MENU CELULAR -->
+            <a class="mobile-menu btn btn-soft" href="#cardapio">
+                Menu
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- =========================
+             INÍCIO
+        ========================== -->
+
+        <section class="hero">
+
+            <div class="container hero-grid">
+
+                <div>
+
+                    <span class="eyebrow">
+                        SABOR • CARINHO • QUALIDADE
+                    </span>
+
+                    <h1>
+                        Uma colherada de felicidade. 💜
+                    </h1>
+
+                    <p>
+                        Bem-vindo à <b>Mousse Delícia</b>:
+                        mousses cremosos, opções leves,
+                        bebidas refrescantes e combos preparados
+                        para deixar seu dia mais gostoso.
+                    </p>
+
+
+                    <div class="hero-actions">
+
+                        <a class="btn btn-primary" href="#cardapio">
+                            Ver cardápio
+                        </a>
+
+                        <a class="btn btn-soft" href="#pedido">
+                            Fazer encomenda
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-art">
+
+                    <img
+                        src="assets/cd.png"
+                        alt="Quarteto Doce"
+                    >
+
+                    <span class="badge one">
+                        Quarteto Doce 💜
+                    </span>
+
+                    <span class="badge two">
+                        ⭐ 4,9/5 pelos clientes
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             BENEFÍCIOS
+        ========================== -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="feature-grid">
+
+
+                    <div class="feature">
+
+                        <div class="feature-icon">
+                            🍓
+                        </div>
+
+                        <h3>
+                            Ingredientes selecionados
+                        </h3>
+
+                        <p>
+                            Preparamos cada receita pensando
+                            em sabor, textura e apresentação.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="feature">
+
+                        <div class="feature-icon">
+                            💗
+                        </div>
+
+                        <h3>
+                            Feito com carinho
+                        </h3>
+
+                        <p>
+                            Do preparo à embalagem, cada pedido
+                            recebe atenção especial.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="feature">
+
+                        <div class="feature-icon">
+                            📦
+                        </div>
+
+                        <h3>
+                            Encomendas
+                        </h3>
+
+                        <p>
+                            Monte seu pedido para festas,
+                            reuniões ou para aproveitar em casa.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             CARDÁPIO
+        ========================== -->
+
+        <section class="section alt" id="cardapio">
+
+            <div class="container">
+
+
+                <div class="section-head">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            NOSSO CARDÁPIO
+                        </span>
+
+                        <h2>
+                            Escolha sua delícia
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        Do doce ao saudável, passando por bebidas
+                        e combos para você montar a combinação perfeita.
+                    </p>
+
+                </div>
+
+
+
+                <!-- CATEGORIAS -->
+
+                <div class="tabs">
+
+                    <button
+                        class="tab active"
+                        data-cat="todos">
+                        Tudo
+                </button>
+
+                    <button
+                        class="tab"
+                        data-cat="doce">
+                        Cardápio doce
+                    </button>
+
+                    <button
+                        class="tab"
+                        data-cat="bebidas">
+                        Bebidas
+                    </button>
+
+                    <button
+                        class="tab"
+                        data-cat="combo">
+                        Combos
+                    </button>
+
+                </div>
+
+
+                <!-- PRODUTOS -->
+
+                <div
+                    class="grid"
+                    id="product-grid">
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             PROMOÇÕES
+        ========================== -->
+
+        <section
+            class="section"
+            id="promocoes">
+
+            <div class="container">
+
+                <div class="promo">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            OFERTA DA SEMANA
+                        </span>
+
+                        <h2 style="color:#fff">
+                            Quarteto Doce por R$ 34,90
+                        </h2>
+
+                        <p>
+                            Mousse de Chocolate + Mousse de Maracujá + Mousse de Morango + Mousse de Limão. 😋
+                        </p>
+
+                    </div>
+
+
+                    <button
+                        class="btn"
+                        onclick="add(8)">
+
+                        Adicionar combo
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             AVALIAÇÕES
+        ========================== -->
+
+        <section
+            class="section"
+            id="avaliacoes">
+
+            <div class="container">
+
+
+                <div class="section-head">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            QUEM EXPERIMENTOU, AMOU
+                        </span>
+
+                        <h2>
+                            Avaliações
+                        </h2>
+
+                    </div>
+
+
+                    <a
+                        class="btn btn-soft"
+                        href="avaliacao.html">
+
+                        Deixar avaliação
+
+                    </a>
+
+                </div>
+
+
+                <div
+                    class="review-grid"
+                    id="reviews">
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             ENCOMENDA
+        ========================== -->
+
+        <section
+            class="section alt"
+            id="pedido">
+
+            <div class="container">
+
+
+                <div class="section-head">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            ENCOMENDA
+                        </span>
+
+                        <h2>
+                            Seu pedido
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        Escolha os itens acima e preencha seus
+                        dados para solicitar a encomenda.
+                    </p>
+
+                </div>
+
+
+
+                <div class="order">
+
+
+                    <!-- ITENS -->
+
+                    <div class="panel">
+
+                        <h3>
+                            Itens escolhidos
+                        </h3>
+
+                        <div
+                            class="order-list"
+                            id="cart-list">
+                        </div>
+
+
+                        <div class="total">
+
+                            <span>
+                                Total
+                            </span>
+
+                            <span id="cart-total">
+                                R$ 0,00
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- FORMULÁRIO -->
+
+                    <div class="panel">
+
+                        <h3>
+                            Dados da encomenda
+                        </h3>
+
+
+                        <form id="order-form">
+
+
+                            <div class="form-grid">
+
+
+                                <div class="field">
+
+                                    <label>
+                                        Nome
+                                    </label>
+
+                                    <input
+                                        required
+                                        placeholder="Seu nome">
+
+                                </div>
+
+
+
+                                <div class="field">
+
+                                    <label>
+                                        WhatsApp
+                                    </label>
+
+                                    <input
+                                        required
+                                        placeholder="(00) 00000-0000">
+
+                                </div>
+
+
+
+                                <div class="field full">
+
+                                    <label>
+                                        Data desejada
+                                    </label>
+
+                                    <input
+                                        type="date"
+                                        required>
+
+                                </div>
+
+
+
+                                <div class="field full">
+
+                                    <label>
+                                        Observações
+                                    </label>
+
+                                    <textarea
+                                        rows="4"
+                                        placeholder="Sabor, quantidade, horário...">
+                                    </textarea>
+
+                                </div>
+
+
+
+                                <div class="field full">
+
+                                    <button
+                                        class="btn btn-primary">
+
+                                        Enviar encomenda 💜
+
+                                    </button>
+
+                                </div>
+
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================
+         RODAPÉ
+    ========================== -->
+
+    <footer>
+
+        <div class="container footer-grid">
+
+
+            <div>
+
+                <div
+                    class="logo footer-logo">
+
+                    <span class="logo-mark">
+
+                        <img
+                            src="assets/logo.jpeg"
+                            alt="Logo Mousse Delícia">
+
+                    </span>
+
+                    Mousse Delícia
+
+                </div>
+
+
+                <p>
+                    Doces, opções leves e momentos especiais
+                    em cada pote.
+                </p>
+
+            </div>
+
+
+
+            <div>
+
+                <h3 style="color:#fff">
+                    Navegação
+                </h3>
+
+                <p>
+
+                    <a href="#cardapio">
+                        Cardápio
+                    </a>
+
+                    <br>
+
+                    <a href="#promocoes">
+                        Promoções
+                    </a>
+
+                    <br>
+
+                    <a href="#pedido">
+                        Encomenda
+                    </a>
+
+                </p>
+
+            </div>
+
+
+
+            <div>
+
+                <h3 style="color:#fff">
+                    Avaliações
+                </h3>
+
+                <p>
+
+                    <a href="avaliacao.html">
+                        Avaliar pedido
+                    </a>
+
+                    <br>
+
+                    <a href="#avaliacoes">
+                        Ver avaliações
+                    </a>
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="container footer-bottom">
+
+            © 2026 Mousse Delícia • Site demonstrativo
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- MENSAGEM -->
+    <div class="toast"></div>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
